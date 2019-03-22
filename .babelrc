@@ -8,7 +8,21 @@
     }],
     "stage-2"
   ],
-  "plugins": ["transform-vue-jsx", "transform-runtime"],
+  "plugins": [
+    "transform-vue-jsx",
+    "transform-runtime",
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./src"
+        ],
+        "alias": {
+          "src": "./src"
+        }
+      }
+    ]
+  ],
   "env": {
     "test": {
       "presets": ["env", "stage-2"],
