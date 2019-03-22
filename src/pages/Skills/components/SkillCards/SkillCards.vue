@@ -67,7 +67,7 @@ export default {
   position: relative;
   margin: 8px;
   width: 184px;
-  height: 230px;
+  height: 280px;
   background-color: rgb(250, 250, 250);
   color: #000;
 }
